@@ -17,12 +17,12 @@ for rowsData in rows:
     print(int(rowsData))
 print (my_queues)
 
-def mywriteXLS(cols_one, clols_two, file_name):
+def mywriteXLS(cols_one, cols_two, file_name):
     xls = ExcelWrite.Workbook()
     sheet = xls.add_sheet("Sheet1", cell_overwrite_ok=True)
     i = 0
-    for row in clos_one:
-        for row_one in clos_two:
+    for row in cols_one:
+        for row_one in cols_two:
             sheet.write(i, 0, row)
             sheet.write(i, 1, row_one)
             i = i+1
